@@ -1,0 +1,44 @@
+[
+    {
+        "title": "HMY Yachts - Algolia Search Integration",
+        "description": "Integrated use of instantsearch.js API from the 3rd Party Service Algolia. This uses a react.js based javascript API to connect several services to gether to serve end-users accurate and helpful search results.",
+        "projectUrl": "http://www.hmy.com/",
+        "projectThumb": "./img/projects/hmy-thumb.jpg",
+        "languages": "jQuery, Algolia, ColdFusion, select2, JSON"
+    },
+    {
+        "title": "Fleet Advantage - Comparative Cost Calculator",
+        "description": "Reproduction of a clients excel based spreadsheet marketing tools. Utilizes JSON, jQuery, ColdFusion",
+        "projectUrl": "https://www.fleetadvantage.com/projects/cca/calculator.cfm?userID=1",
+        "projectThumb": "./img/projects/fleet-thumb.jpg",
+        "languages": "jQuery, ColdFusion, AJAX, JSON"
+    },
+    {
+        "title": "Bertram - Build A Boat",
+        "description": "Client product configurator. Utilizes jQuery to manage transparent image assets to create a unique customer experience, layered image data is converted to a single PNG.",
+        "projectUrl": "http://www.bertram.com/build-a-boat/",
+        "projectThumb": "./img/projects/bertram-thumb.jpg",
+        "languages": "jQuery, ColdFusion, pure javascript (for ctx)"
+    },    
+    {
+        "title": "JetBoatPilot - Product Estimator",
+        "description": "Client multi-step product configurator. Created a simple to use interface that gives both the client and end-user a customized product price with options. Uses jQuery, JSON, ColdFusion",
+        "projectUrl": "http://www.jetboatpilot.com/seadek.cfm#Estimator",
+        "projectThumb": "./img/projects/jetboat-thumb.jpg",
+        "languages": "jQuery, ColdFusion"
+    },    
+    {
+        "title": "Sonic Boats - 3D Model Viewer",
+        "description": "Integrated jQuery with Three.js to load 3rd Party 3D model data into a WebGL interface to let users customize the client's product.",
+        "projectUrl": "http://www.sonicboats.net/oceanspirit.cfm",
+        "projectThumb": "./img/projects/sonic-thumb.jpg",
+        "languages": "jQuery, three.js"
+    },
+    {
+        "title": "Fleet Advantage - Fuel Break Even Calculator",
+        "description": "Reproduction of client's excel based spreadsheet marketing tools.",
+        "projectUrl": "http://www.fleetadvantage.net/projects/fbec/calculator.cfm?userID=1",
+        "projectThumb": "./img/projects/fleet2-thumb.jpg",
+        "languages": "jQuery, AJAX, ColdFusion, JSON"
+    }
+]

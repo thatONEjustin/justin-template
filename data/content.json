@@ -1,0 +1,21 @@
+{
+    "title": "Hi, I'm Justin*",
+    "tagline": "I develop in javascript",
+
+    "disclaimer" : "* this is me at NYCC 2014",
+
+    "mission" : "Mission Statement",
+    "statement" : "I’m looking for full time employment to develop and maintain javascript web applications. I’m interested in working with a close knit team with clearly defined goals to create useful solutions for end-users.",
+
+    "languageTitle" : "I’m Proficient With",
+    "languages" : [
+        "jquery",
+        "html5",
+        "css3",
+        "coldfusion",
+        "lesscss",
+        "gulp"
+    ],
+
+    "projectTitle" : "A Few Projects of Mine"
+}

@@ -1,0 +1,177 @@
+@import 'reset';
+@import 'helpers';
+
+$headerFont: 'raleway', sans-serif;
+$bodyFont: 'aaux-next', sans-serif;
+
+$h1FontSize: 10rem;
+$h2FontSize: 6.5rem;
+
+$liteBlue: #3399ff;
+
+
+html, body {
+    font-size: 1rem;
+}
+
+h1, h2, h3, h4, h5, h6 {    
+    font-family: $headerFont;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-family: $bodyFont;
+}
+
+#justin-bg {
+    
+    background: url('../img/home-header.jpg') no-repeat;
+    background-size: cover;
+
+    min-height: 850px;
+
+    padding: 40px;
+
+    h1, h2 {
+        color: white;        
+    }
+
+    h1 {
+        font-size: $h1FontSize;    
+        @include textShadow(3px, 3px, 0px, #000);
+    }
+
+    h2 {
+        font-size: $h2FontSize;
+        line-height: 6rem;  
+        @include textShadow(2px, 2px, 0px, #000);
+    }
+    
+    h4 {
+        font-size: 2rem;
+        @include textShadow(2px, 2px, 0px, #000);
+    }
+
+    #tagline {
+        margin-top: 10%;
+    }
+
+    #resume {
+        margin-top: 40px;
+        a {
+            font-family: $headerFont;
+            color: #fff;
+            text-decoration: none;
+            //margin: 10px 15px;
+            width: 100%;
+            padding: 10px 35px;
+            border-radius: 0px;
+            border: 4px solid white;
+            font-size: 2.5rem;
+
+            @include transition;
+
+            &:hover {
+                @include Scale(1.5,1.5);
+                background: white;
+                color: black;
+            } 
+        }
+    }
+
+    #disclaimer {
+        //position: absolute;
+        //bottom: 60px;
+
+        h4 {
+            color: white;
+        }
+    }
+}
+
+#mission-statement {
+    margin-top: 25px;
+
+    h2 {
+        font-size: 3rem;        
+    }
+
+    p {
+        font-size: 2rem;
+    }
+}
+
+#languages {
+    background-color: $liteBlue;
+    padding: 40px 0;
+
+    h3 {
+        color: white;
+        font-size: 2.5rem;
+    }
+
+    #logos {
+        margin-top: 15px;
+
+        div.col-xs {
+            img {
+                width: 80%;
+                height: auto;
+            }
+        }
+    }
+}
+
+#projects {
+    h3 {
+        font-size: 2.5rem;
+        padding: 15px 0;
+    }
+
+    .project-item {
+        margin: 30px 0;
+
+        .row {
+            .photo {
+                padding-right: 0;
+                margin-right: 0;
+
+                img {
+                    width: 100%;
+                    height: auto;
+                    @include boxShadow(0px, 0px, 20px, 0, rgba(0,0,0,0.7));
+                }
+            }
+
+            .details {
+                h4 {
+                    font-size: 2rem;
+                }
+
+                .info {
+                    padding-left: 10px;
+
+                    p {
+                        font-size: 1.75rem;
+                    }
+                }
+            }
+        }        
+
+        .tech-used {
+            background: $liteBlue;
+            color: white;  
+            width: 100%;     
+            padding-right: 15px;
+
+            p {
+                text-align: right;
+                width: 100%;
+                padding: 7px 0;
+                margin: 0;
+                font-size: 1rem;
+            }
+        }
+    }
+}
