@@ -25,10 +25,22 @@
     }
 }
 
-@mixin Scale($width: 1, $height: 1) {
-    -webkit-transform: scale($width, $height);
-    -moz-transform: scale($width, $height);
-    -ms-transform: scale($width, $height);
-    -o-transform: scale($width, $height);
-    transform: scale($width, $height);
+/*@mixin transformers($type: 'scale', $arguments) {
+    @if $type == 'scale' {
+        -webkit-transform: scale($arguments);
+        -moz-transform: scale($arguments);
+        -ms-transform: scale($arguments);
+        -o-transform: scale($arguments);
+        transform: scale($arguments);
+    }
+}*/
+
+@mixin centerBlock {
+    $x: 50%;
+    $y: 50%;
+    -moz-transform:    translateX($x) translateY($y);
+    -webkit-transform: translateX($x) translateY($y);
+    -o-transform:      translateX($x) translateY($y);
+    -ms-transform:     translateX($x) translateY($y);
+    transform:         translateX($x) translateY($y);
 }

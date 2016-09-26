@@ -1,0 +1,48 @@
+@import 'reset';
+@import 'helpers';
+
+$headerFont: Helvetica,  Arial, sans-serif;
+$bodyFont: Calibri, Helvetica, Arial, sans-serif;
+
+
+
+$h1FontSize: 2rem;
+$h2FontSize: 1.75rem;
+$bodySize: 1rem;
+
+$liteBlue: #3399ff;
+
+$theFold: 600px;
+
+
+html, body {
+    font-size: 1rem;
+    width: 100%;    
+}
+
+h1, h2, h3, h4, h5, h6 {    
+    font-family: $headerFont;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-family: $bodyFont;
+}
+
+section {
+    &.hero {
+        min-height: $theFold;
+        background: #666;
+        color: white;
+
+        .content {
+            margin-top: 25%;
+
+            &::after {
+                clear: both;
+                float: none;
+            }
+        }
+    }
+}

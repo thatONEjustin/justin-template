@@ -24,7 +24,7 @@ var paths = {
     scripts: 'build/js/**.js',
     json:    'build/data/**.json',
     images:  ['build/img/**.{jpg,gif,svg,png}', 'build/img/**/**.{jpg,gif,svg,png}', 'build/img/**/**/**.{jpg,gif,svg,png}', '!build/img/**.db', '!build/img/**/**.db'],
-    html:    ['build/**.html', 'build/pages/**.html', 'build/includes/**.html'], 
+    html:    ['build/**.html', 'build/pages/**.html', 'build/inc/**.html'], 
     sass:    ['build/css/**.scss', 'build/themes/**.scss', '!build/**/_helpers.scss'],
     css:     ['build/css/**.css', '!build/css/**.scss']  
 }

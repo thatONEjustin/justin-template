@@ -22,12 +22,15 @@
 
     <body id="{{activePage}}">
 
+        <ng-include src="'./inc/menu.html'"></ng-include>
 
         <div id="site" class="viewport">    
 
             <div ng-view></div>
             
-        </div>
+        </div>        
+
+        <ng-include src="'./inc/footer.html'"></ng-include>
 
         <!-- add javascripts -->
         <script src="js/_helpers.js"></script>
