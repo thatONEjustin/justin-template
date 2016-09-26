@@ -1,15 +1,22 @@
-<nav class="container-fluid">
-    <div class="row top-xs">
+<nav class="container">
+    <div class="row middle-xs">
         <div class="col-xs">
-            <a class="logo"><img src="//placehold.it/200x100" /></a>
+            <!--<a class="logo"><img src="//placehold.it/200x100" /></a>-->
+            <div class="logo">
+                <a href="#/">
+                    <img src="//placehold.it/200x100" />
+                </a>
+            </div>
         </div>
         <div class="col-xs">
-            <ul>
-                <li><a>Page 1</a></li>
-                <li><a>Page 2</a></li>
-                <li><a>Page 3</a></li>
-                <li><a>Page 4</a></li>
-            </ul>
+            <div class="row end-xs">                    
+                <ul>
+                    <li><a href="#/page" ng-class="{active:active == 'page'}">Page 1</a></li>
+                    <li><a href="#/page" ng-class="{active:active == 'page'}">Page 2</a></li>
+                    <li><a href="#/page" ng-class="{active:active == 'page'}">Page 3</a></li>
+                    <li><a href="#/page" ng-class="{active:active == 'page'}">Page 4</a></li>
+                </ul>
+            </div>
         </div>
     </div>
 </nav>

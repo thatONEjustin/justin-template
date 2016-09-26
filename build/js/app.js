@@ -3,29 +3,39 @@
 var app = angular.module('portfolio-site', ['ngRoute']);
 
 app.config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
+    
     $routeProvider
         .when('/', {
             templateUrl: 'pages/home.html',
-            controller: 'HomeController'
+            controller: 'HomeController',
+            active: 'home'
+        })
+        .when('/page', {
+            templateUrl: 'pages/page.html',
+            controller: 'PageController',
+            active: 'page'
         })
         .otherwise({ redirectTo: '/' });
+
+}]).run(['$rootScope', '$http', '$browser', '$timeout', "$route", function ($scope, $http, $browser, $timeout, $route) {
+
+    $scope.$on("$routeChangeSuccess", function (scope, next, current) {
+        $scope.active = $route.current.active;
+    });
+    
 }]);
+
 
 //Basically my use of MainController mirrors an old technique I used to do 
 //with an init function that ran when $(document).ready() would fire. 
-app.controller('MainController', function ($scope, $http, GetContent) {
+app.controller('MainController', function ($scope, $http, $route, GetContent) {
 
     try {
 
-        Typekit.load({ async: true });
+        Typekit.load({ async: true });        
 
-        //I chose to load the .json data here making it part of the main load process. 
-        GetContent.getJson('./data/content.json').then(function (data) {
-            $scope.content = data;
-        });
-    
-        GetContent.getJson('./data/projects.json').then(function (data) {
-            $scope.projects = data; 
+        $scope.$on("$routeChangeSuccess", function (scope, next, current) {
+            $scope.active = $route.current.active;
         });
 
     } catch (err) {
@@ -38,15 +48,13 @@ app.controller('MainController', function ($scope, $http, GetContent) {
 
 app.controller('HomeController', function ($scope) {
 
-    //Here I set the $scope variables from the $scope.content data derived from content.json
-    $scope.title = $scope.content.title;
-    $scope.tagline = $scope.content.tagline;
-    $scope.disclaimer = $scope.content.disclaimer;
-    $scope.mission = $scope.content.mission;
-    $scope.statement = $scope.content.statement;
-    $scope.languageTitle = $scope.content.languageTitle;
-    $scope.languages = $scope.content.languages;
-    $scope.projectTitle = $scope.content.projectTitle;
+        
+
+});
+
+app.controller('PageController', function ($scope) {
+
+    
 
 });
 
